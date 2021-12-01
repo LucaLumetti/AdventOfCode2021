@@ -8,5 +8,5 @@ input = input.map((v, i, arr) => {
 input.shift()
 input.shift()
 
-input = input.reduce((a,b,c,d) => c == 0?0:a + (b > d[c-1]), 0)
+input = input.reduce((a,b,c,d)=>!!c*(a+(b>d[c-1])),0))
 console.log(input)
