@@ -1,7 +1,5 @@
 let input = require('fs').readFileSync('input', 'utf8').trim().split('\n').map(x => x.split('').map(Number));
 
-let alfa = '#abcdefghijklmnopqrstuvwxyz'.split('');
-
 class Basin {
   constructor(area, pos, value) {
     this.x = pos.x
@@ -94,4 +92,3 @@ do {
 let basins = area.get_basins_sizes()
 let sorted_basins = Object.keys(basins).sort((a,b) => basins[b] - basins[a])
 console.log(basins[sorted_basins[0]]*basins[sorted_basins[1]]*basins[sorted_basins[2]])
-
