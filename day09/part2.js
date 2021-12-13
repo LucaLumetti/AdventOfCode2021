@@ -34,7 +34,6 @@ class Basin {
 class Area {
   constructor (input) {
     this.basins_ids = 1
-    this.set_this_round = []
     this.basins = new Map()
     this.changed = false
     input.forEach((row, y) => {
